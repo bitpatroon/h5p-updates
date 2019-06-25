@@ -1,0 +1,44 @@
+{
+    "name": "bitpatroon/h5pupdates",
+    "type": "typo3-cms-extension",
+    "description": "Updates the various objects ao to use / where DIRECTORY_SEPARATOR is used. Ensure compatibility with all platforms",
+    "keywords": [
+        "h5p",
+        "content",
+        "interactive",
+        "html5",
+        "Windows",
+        "Linux"
+    ],
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Sjoerd Zonneveld",
+            "homepage": "https://www.bitpatroon.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "h5p/h5p-core": "^1.18",
+        "h5p/h5p-editor": "^1.17",
+        "guzzlehttp/guzzle": "^6.3",
+        "typo3/cms-core": ">=7.6.0 < 9.5.99"
+    },
+    "replace": {
+        "typo3-ter/h5p": "self.version"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MichielRoos\\H5p\\": "Classes"
+        }
+    }
+}
